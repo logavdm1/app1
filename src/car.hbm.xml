@@ -1,0 +1,45 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="categorymaster.Car" table="car_details">
+        <id name="car_id" column="car_id" ></id>
+        <property name="car_status" />
+        <property name="car_make" />
+       <property name="car_model" />
+       <property name="Kilometres" />
+       <property name="Body_Type" />  
+       <property name="Style" />
+       <property name="Engine" />
+       <property name="Transmission" />
+       <property name="Exterior_Color" />
+       <property name="Interior_color" />
+       <property name="Passangers_Doors" /> 
+       <property name="Fuel_Type" /> 
+       <property name="Mileage" />
+       <property name="post_day" /> 
+       <property name="post_month" />   
+       <property name="post_year" />     
+       <property name="location" />  
+       <property name="year_model" />
+       <property name="estimated_price" />    
+       <property name="tumb_img" />   
+       <set table="car_imgs" name="car_imgs" cascade="all">
+			<key column="car_id" />
+			<one-to-many class="categorymaster.CarImgs" />
+		</set>
+		<set table="car_features" name="extra_features" cascade="all">
+			<key column="car_id" />
+			<one-to-many class="categorymaster.ExtraFeatures" />
+		</set>
+		
+	
+    </class>  
+    
+    
+</hibernate-mapping>
+
+

@@ -1,0 +1,32 @@
+<?xml version="1.0"?>
+<!DOCTYPE hibernate-mapping PUBLIC
+        "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+"http://hibernate.sourceforge.net/hibernate-mapping-3.0.dtd">
+
+
+<hibernate-mapping>
+    <class name="categorymaster.ExtraFeatures" table="car_features">
+       <id name="feature_id" column="feature_id" ></id> 
+       <property name="Security_System" />
+       <property name="Air_Conditioning" />
+       <property name="Alloy_Wheels" />
+       <property name="Anti_Lock_Brakes" />
+       <property name="Anti_Theft" />
+       <property name="Anti_Starter" />
+       <property name="Dual_Airbag" />
+       <property name="Intermittent_Wipers" />
+       <property name="Keyless_Entry" />
+       <property name="Power_Mirrors" />
+       <property name="Power_Seat" />
+       <property name="Power_Steering" />
+       <property name="CD_Player" />
+       <property name="Driver_Side_Airbag" />
+       <property name="Power_Windows" />
+       <property name="Remote_Start" />
+       
+    </class>  
+    
+    
+</hibernate-mapping>
+
+
